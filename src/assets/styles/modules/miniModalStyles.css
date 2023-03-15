@@ -1,0 +1,125 @@
+/*mini-modal*/
+.modal-bkg{   
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    animation-name: modala;
+    animation-duration: 1s; 
+    display: flex;
+    z-index: 1;
+}
+.modal-bkg-x{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.animation{
+    animation-name: animatione;
+    animation-duration: 3s; 
+}
+.off{
+    display: none;
+}
+.modal{
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 400px;
+    height:120px;
+    bottom: 0;
+}
+@keyframes modala {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 10%;
+    }
+    20%{
+        opacity: 20%;
+    }
+    30%{
+        opacity: 30%;
+    }
+    40%{
+        opacity: 40%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    99%{
+       opacity: 100%;
+    }
+    100%{
+        opacity: 0;  
+    }
+}
+@keyframes animatione {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 15%;
+    }
+    20%{
+        opacity: 30%;
+    }
+    30%{
+        opacity: 40%;
+    }
+    40%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 70%;
+    }
+    51%{
+        opacity: 80%;
+    }
+    52%{
+        opacity: 90%;
+    }
+    53%{
+        opacity: 100%;
+    }
+    54%{
+        opacity: 100%;
+    }
+    55%{
+        opacity: 100%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    70%{
+        opacity: 40%;
+    }
+    80%{
+        opacity: 30%;
+    }
+    90%{
+        opacity: 20%;
+    }
+    99%{
+       opacity: 10%;
+    }
+    100%{
+        opacity: 0;  
+    }
+}

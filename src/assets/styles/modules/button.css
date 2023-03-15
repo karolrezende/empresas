@@ -1,0 +1,33 @@
+.button-blue{
+    background-color: var(--brandblue);
+    border: 1px solid var(--brandblue);
+    color: var(--brandwhite);
+    font-weight: 500;
+
+}
+.button-blue-t{
+    background-color: var(--brandwhite);
+    border: 1px solid var(--brandblue);
+    color: var(--brandblue);
+    font-weight: 500;
+
+}
+.button-green{
+    background-color: var(--brandgreen);
+    border: 1px solid var(--brandgreen);
+    color: var(--brandwhite);
+    font-weight: 500;
+}
+.button-red{
+    background-color: var(--brandwhite);
+    border: 1px solid var(--brandred);
+    color: var(--brandred);
+    font-weight: 500;
+}
+.button-purple{
+    border: 1px solid var(--brandblue);
+    border-radius: 200px;
+    background-color: var(--brandwhite);
+    color: var(--brandblue);
+    width: 150px;
+}

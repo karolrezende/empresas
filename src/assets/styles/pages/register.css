@@ -1,0 +1,50 @@
+@import url(../globalStyles.css);
+.section{
+    background-image: url(../../img/bkg-man.jpg);
+    background-repeat: no-repeat;
+    min-height: 94vh;
+    background-size: cover;
+}
+.div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.form-register{
+    background: #ffffffdc;
+    height:40em;
+    width: 100vw;
+    margin-top: 4em;
+}
+input{
+    height: 50px; 
+}
+.header-button-hamb{
+    display: flex;
+    flex-direction: column;
+}
+.header-button{
+    display: none;
+}
+@media screen and (min-width:1000px) {
+    .section{
+        background-image: url(../../img/bkg-man-full.jpg);
+        min-width: 100vw;
+        margin: 0;
+    }
+    .div{
+        min-width: 100vw;
+    }
+    .form-register{
+        width: 500px;
+    }
+    .header-button-hamb{
+        display: none;
+    }
+    .header-button{
+        display: flex;
+        width: 200px;
+    }
+}
+

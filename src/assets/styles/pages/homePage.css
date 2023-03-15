@@ -1,0 +1,41 @@
+@import url(../globalStyles.css);
+
+.header-button{
+    display: flex;
+    width: 200px;
+}
+.section-list{ 
+    display: flex;
+	overflow-x: scroll;
+    height: 100%;
+}
+.card{
+    min-width: 300px;
+    border-bottom: 1px solid #4200FF;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 4px 4px 33px -1px rgba(0,0,0,0.49);
+    
+}
+@media screen and (min-width: 1200px) {
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 80vh;
+        margin: 2em 12em 0;
+  
+    }
+
+    .section-list{
+        display: block;
+        height: 700px;
+     
+    }
+    .img-bkg{
+        background-image: url(../../img/bkg-man-full.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 800px;
+    }
+}

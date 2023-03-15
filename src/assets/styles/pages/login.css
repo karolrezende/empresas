@@ -1,0 +1,53 @@
+@import url(../globalStyles.css);
+.section{
+    background-image: url(../../img/bkg-man.jpg);
+    background-repeat: no-repeat;
+    min-height: 93vh;
+    background-size: cover;
+}
+.form-register{
+    margin-top: 20%;
+    background: #ffffffdc;
+    height:40em;
+    width: 100vw;
+}
+input{
+    height: 50px; 
+}
+.header-button-hamb{
+    display: flex;
+    flex-direction: column;
+}
+.header-button{
+    display: none;
+}
+@media screen and (min-width:1000px) {
+    .section{
+        background-image: url(../../img/bkg-man-full.jpg);
+        min-width: 100vw;
+        margin: 0;
+    }
+    .div{
+        min-width: 100vw;
+    }
+    .form-register{
+        margin-top: 10%;
+        width: 500px;
+    }
+    .header-button-hamb{
+        display: none
+    }
+    .header-button{
+        display: flex;
+        gap: 8px;
+        width: 200px;
+    }
+}
+
+/*buttons wrong password*/
+.input-invalid{
+    border: 3px solid #c82121 !important;
+}
+.input-invalid:hover{
+    border: 3px solid #c82121;
+}

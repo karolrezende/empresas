@@ -1,0 +1,35 @@
+@import url(../globalStyles.css);
+
+.header-button{
+    display: flex;
+    width: 150px;
+}
+.modal-bkg{
+    background: #4623A721;
+    width: 100vw;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 500px;
+    height: 400px;
+}
+.modal-remove{
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.off{
+    display: none;
+}

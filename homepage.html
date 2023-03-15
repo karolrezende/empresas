@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='module' src="./src/assets/js/modules/apiHomePage.js"  defer></script> 
+    <script src="./src/assets/js/modules/homePage.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/assets/styles/pages/homePage.css">
+    <title>Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="border-b-2">
+            <div class="flex items-center justify-between mx-6">
+                <div class="flex py-4 items-center">
+                    <span class="circle bg-[#4200FF] w-4 h-4 rounded-full mr-4"></span>
+                    <h1>Empresas</h1>
+                </div>
+                <div class="header-button gap-5">
+                    <button class="button-blue-t w-1/2 rounded py-2 "><a href="./src/pages/login.html">Login</a></button>
+                    <button class="button-blue w-1/2 rounded py-2"><a href="./src/pages/register.html">Cadastro</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section gap-8">
+        <div class="img-bkg mx-6 mt-4"></div>
+        <div>
+            <div class="mx-6 mt-4 ">
+                <div class="button-blue button-1 p-3 w-full getButton rounded flex justify-between">
+                    <p class="flex">Selecionar Setor</p>
+                    <button>
+                        <img src="./src/assets/img/dropdown.svg" onclick="toggle()">
+                    </button>
+                </div>
+            </div>
+            <div class="mx-5 mt-8 section-list"></div>
+        </div>
+    </section>
+</body>
+</html>

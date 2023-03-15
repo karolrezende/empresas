@@ -1,0 +1,14 @@
+@import url(../globalStyles.css);
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.box-user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.off{
+    display: none;
+}

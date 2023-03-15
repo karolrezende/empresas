@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/renderUserPage.js" defer></script>
+    <script src="../assets/js/modules/toggle.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles/modules/modalStyles.css">
+    <title>Empresas - sem empresa</title>
+</head>
+<body>
+    <header>
+        <div class="border-b-2 ">
+            <div class="flex items-center justify-between mx-20">
+                <div class="flex py-4 items-center justify-between">
+                    <span class="circle bg-[#4200FF] w-4 h-4 rounded-full mr-4"></span>
+                    <h1>Empresas</h1>
+                </div>
+                <div class="header-button">
+                    <button class="button-blue-t w-full rounded py-2"><a href="../pages/login.html">Logout</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div  class="border-2 mx-20 mt-10  py-10">
+            <div class="mx-10 flex items-center justify-between">
+                <div class="w-7/12">
+                    <h1 id="name" class="font-bold text-3xl mb-4">Name</h1>
+                    <div class="flex justify-between">
+                        <p id="email-renderx" class="email-renderx">Email</p>
+                        <p id="nivel-renderx" class="nivel-renderx">Nível</p>
+                        <p id="modalidade-renderx" class="modalidade-renderx">Modalidade</p>
+                    </div>
+                </div>
+                <div>
+                    <img class='cursor-pointer'src="../assets/img/black-pen.svg" alt="Editar" onclick='showModal("0")'>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-20 border-2 mt-10 h-96">
+            <div class="h-full flex items-center justify-center bg-[#f1f3f5]">
+                <p class="text-2xl">Você ainda não foi contratado</p>
+            </div>
+        </div>  
+        <div class="modal-bkg off" id="0">
+            <div class="modal">
+                <div class="modal-content m-8">
+                    <p class="text-2xl text-right cursor-pointer" onclick="showModal('0')">X</p>
+                    <h1 class="font-bold text-3xl mb-4">Editar Perfil</h1>
+                    <div class="flex flex-col">
+                        <input class="mb-6 placeholder:pl-6 border-solid border-2 border-[#495057] h-10" type="text" id="name-edit" placeholder="Seu nome">
+                        <input class="mb-6 placeholder:pl-6 border-solid border-2 border-[#495057] h-10" type="text" id='email-edit' placeholder="Seu e-mail">
+                        <input class="mb-6 placeholder:pl-6 border-solid border-2 border-[#495057] h-10" type="text" id='password-edit'placeholder="Sua senha">
+                    </div>
+                    <button class="mb-2 button-blue h-12 w-full" onclick="editUser()">Editar perfil</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

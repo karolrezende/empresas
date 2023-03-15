@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/styles/pages/login.css">
+    <script src="../assets/js/logUser.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="border-b-2">
+            <div class="flex items-center justify-between mx-6">
+                <div class="flex py-4 items-center">
+                    <span class="circle bg-[#4200FF] w-4 h-4 rounded-full mr-4"></span>
+                    <h1>Empresas</h1>
+                </div>
+                <div class="header-button-hamb">
+                    <span class="bg-[#000000] w-10 h-1 rounded mb-1.5"></span>
+                    <span class="bg-[#000000] w-10 h-1 rounded mb-1.5"></span>
+                    <span class="bg-[#000000] w-10 h-1 rounded"></span>
+                </div>
+                <div class="header-button ">
+                    <button class="button-blue-t w-1/2 rounded py-2 "><a href="../../homepage.html">Home</a></button>
+                    <button class="button-blue w-1/2 rounded py-2"><a href="../pages/register.html">Cadastro</a></button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="flex flex-col items-center justify-center div">
+            <div class="form-register">
+                <h1 class="font-bold mx-8 text-3xl my-8">Login</h1>
+                <p class="text-normal font-medium mx-8">Preencha os campos abaixo</p>
+                <div class="mx-8 mt-12">
+                    <form action="" class="flex flex-col">
+                        <input class="input-email mb-6 placeholder:pl-6 border-solid border-2 border-[#495057]" type="text" id='email-login' placeholder="Seu e-mail">
+                        <input class="input-password mb-6 placeholder:pl-6 border-solid border-2 border-[#495057]" type="text" id='password-login'placeholder="Sua senha">
+                    </form>
+                    <p class="invalid text-[#c82121] text-1xl"></p>
+                    <div class="flex flex-col mt-8">
+                        <button class="mb-2 button-blue h-12" onclick="logUser()">Login</button>
+                        <p class="font-medium text-center my-4">Ou</p>
+                        <button class="mb-2 button-blue-t h-12"><a href="./register.html">Cadastre-se</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
